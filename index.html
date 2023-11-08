@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1xsolid black;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        .nav_item{
+            display: inline;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .nav_item:hover{
+            font-size: 1.5em;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+            padding: 2px 10px;
+        }
+        #img{
+        
+            height: 300px;
+            margin-top: 10px;
+            animation: img 5s;
+            position: relative;
+        }
+        #para{
+            width: 90%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.7em;
+            margin-left: 10px;
+            margin-top: 70px;
+            animation: para 5s;
+            position: relative;
+        }
+        @keyframes img {
+            from{left:-200px} to {left:0px}
+        }
+        @keyframes para {
+            from{right:-200px} to {right:0px}
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <p class="nav_item">Home</p>
+        <p class="nav_item">About</p>
+        <p class="nav_item">Service</p>
+        <p class="nav_item">Contact</p>
+    </div>
+    <div style="display: flex;">
+        <div>
+            <img src="./photo-1503023345310-bd7c1de61c7d.jpg" id="img" alt="">
+        </div>
+        <div>
+            <p id="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium qui error odit blanditiis, illo eaque reiciendis repellat repudiandae nisi possimus eligendi tempore corrupti enim commodi magnam dolore odio culpa?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium qui error odit blanditiis, illo eaque reiciendis repellat repudiandae nisi possimus eligendi tempore corrupti enim commodi magnam dolore odio culpa?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium qui error odit blanditiis, illo eaque reiciendis repellat repudiandae nisi possimus eligendi tempore corrupti enim commodi magnam dolore odio culpa?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium qui error odit blanditiis, illo eaque reiciendis repellat repudiandae nisi possimus eligendi tempore corrupti enim commodi magnam dolore odio culpa?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium qui error odit blanditiis, illo eaque reiciendis repellat repudiandae nisi possimus eligendi tempore corrupti enim commodi magnam dolore odio culpa?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
